@@ -2,7 +2,7 @@
 title Conditional - Activity Diagram 
 
 start
-:The policeman fills pernosal data;
+:The policeman fills personal data;
 :The program analyzes personal data;
 if (Is personal data correct?) then (Yes)
   :Personal data is correct;
