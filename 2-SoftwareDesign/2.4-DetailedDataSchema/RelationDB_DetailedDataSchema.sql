@@ -112,3 +112,7 @@ ALTER TABLE Policeman ADD CONSTRAINT plm_experience_range
 	
 ALTER TABLE Fine_article ADD CONSTRAINT fn_num_range
 	CHECK (article_number>0);
+	
+ALTER TABLE User ADD CONSTRAINT phone_number
+    CHECK ( regexp_like(phone_number, 
+	          '^(\([0-9]{3}\))?[0-9]{3}-[0-9]{4}$'));
