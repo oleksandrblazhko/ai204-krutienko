@@ -1,0 +1,39 @@
+@startuml
+title Relation Schema
+hide circle
+entity "User" as usr {
+  (PK)user_id
+  --
+  surname
+  name
+  patronymic
+  phone_number
+  (FK)driver_id
+}
+entity "Fine" as fn {
+  (PK)fine_id
+  --
+  amount
+  (FK)driver_id
+  (FK)fine_article_id
+}
+
+entity "Fine_article" as fn_art {
+  (PK)fine_article_id
+  --
+  article_number
+  article_type
+}
+
+entity "Driver" as drv {
+  (PK)driver_id
+  --
+  fines
+  car_licence
+}
+
+usr }-- drv
+drv --{ fn
+fn }-- fn_art
+
+@enduml
