@@ -1,0 +1,20 @@
+@startuml 
+title Usecase for Information system
+left to right direction
+skinparam packageStyle rect
+actor User
+actor Driver_consumer
+Driver_consumer --|> User
+rectangle Software {
+  User -- (Authorization)
+  
+  (Send notification about the fine) --> Driver_consumer
+  Driver_consumer --> (Tell about the accident)
+  
+  (Send notification about the fine) ..> (Authorization) : <<include>>
+  (Tell about the accident) ..> (Authorization) : <<include>>
+  (View the driver database) ..> (Authorization) : <<include>>
+  
+  
+}
+@enduml

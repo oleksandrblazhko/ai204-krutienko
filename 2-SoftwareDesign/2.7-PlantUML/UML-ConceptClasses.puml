@@ -1,0 +1,12 @@
+@startuml
+title Classes Diagram
+
+Class Driver
+Class Fine
+Class Fine_article
+Class User
+
+User  <|-- Driver
+Fine "*" <-- "1" Driver : pay
+Fine "1" o-- "1" Fine_article
+@enduml

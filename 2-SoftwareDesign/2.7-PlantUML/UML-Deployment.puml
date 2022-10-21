@@ -1,0 +1,13 @@
+@startuml
+title Deployment for information System
+left to right direction
+node "<<Смартфон>>" as dk {
+  node "<<OS Android>>" {
+      component [.apk (Android Studio)]
+  }
+}
+interface Touch_Screen
+interface Microphone
+Touch_Screen -- dk
+Microphone -- dk
+@enduml
