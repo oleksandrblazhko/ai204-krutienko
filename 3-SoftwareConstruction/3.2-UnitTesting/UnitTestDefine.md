@@ -3,5 +3,3 @@
 ![image](https://user-images.githubusercontent.com/79446188/201143833-47b5c56b-841b-4d3a-81c9-652833f0eb8d.png)
 ![image](https://user-images.githubusercontent.com/79446188/201143953-e63f0011-bce5-4df4-a41e-81cf03fa11aa.png)
 
-![merge_from_ofoct](https://user-images.githubusercontent.com/79446188/201286371-e3df3624-e201-4d5e-81ec-55ef1b59cf48.jpg)
-
