@@ -58,22 +58,22 @@ CREATE TABLE Fine_article ( -- опис статті штрафу
 
 -- обмеження первинного ключа
 ALTER TABLE Policeman ADD CONSTRAINT plm_pk
-	PRIMARY KEY (experiment_id);
+	PRIMARY KEY (policeman_id );
 
 ALTER TABLE Personal_data ADD CONSTRAINT pd_pk
-	PRIMARY KEY (experiment_id);
+	PRIMARY KEY (personal_id );
 
 ALTER TABLE User ADD CONSTRAINT usr_pk
-	PRIMARY KEY (experiment_id);
+	PRIMARY KEY (user_id);
 
 ALTER TABLE Driver ADD CONSTRAINT drv_pk
-	PRIMARY KEY (experiment_id);
+	PRIMARY KEY (driver_id);
 
 ALTER TABLE Fine ADD CONSTRAINT fn_pk
-	PRIMARY KEY (experiment_id);
+	PRIMARY KEY (fine_id);
 
 ALTER TABLE Fine_article ADD CONSTRAINT fn_art_pk
-	PRIMARY KEY (experiment_id);
+	PRIMARY KEY (fine_article_id);
 	
 -- обмеження зовнішнього ключа
 ALTER TABLE User ADD CONSTRAINT plm_id_fk
